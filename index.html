@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demystifying ::before</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>Demystifying <a href="https://www.w3schools.com/cssref/sel_before.asp">::before</a></h1>
+        <span>
+            The ::before inserts content (specified in CSS) 
+            before the content found inside the element in which you intend to insert said content.
+            These can also be stylized further.
+        </span>
+        <p>We have seen in the title that the words "HTML &amp; CSS" have been set within CSS to appear before the content in the h1 tag.
+           It is <strong><em><u>of paramount importance</u></em></strong> that you add the content property within the [element]::before ruleset
+           otherwise the changes within said ruleset will simply be ignored. Note that you do not have to add text, thus you can leave the quotes empty. <br><br>
+
+           <code>content: "";</code> <br><br>
+           Anyways, you can use other styling properties such as padding, background-color (or background...), color, whatever you want! :)
+        </p>
+        <ul class="compatible">
+            <li style="margin-top: 10px;">Google Chrome 4.0</li>
+            <li>Microsoft Edge 9.0
+                <ul>
+                    <li>Microsoft Edge 8.0 might work too.</li>
+                </ul>
+            </li>
+            <li>Mozilla Firefox 3.5</li>
+            <li>Safari 3.1</li>
+            <li>Opera 7.0</li>
+        </ul>
+        <hr>
+        <h1>Demystifying <a href="https://www.w3schools.com/cssref/sel_after.asp">::after</a></h1>
+        <span>Works akin to ::before, except content is placed after the content within the element you wish to stylize using ::after.</span>
+        <br>
+        <span>For the sake of keeping the topic pertaining to software development, let's use a programming-related example...</span>
+        
+        <p>Statements in a great deal of programming languages must end with a semicolon... (such as Java, C#, et cetera...)</p>
+        <span class="statement">Console.WriteLine("Hello World")</span>
+        <p>
+            We added a semicolon within the content property... and also increased the font-size as the semicolon is rather minuscule.
+            Surely now it won't complain about a missing semicolon.
+        </p>
+        <span class="comment">int[] arr_int = new int[] {2, 4, 6, 8, 10}</span>
+        <span>Now you should have an idea of what these selectors do. :) As usual, you are more than welcome to hit me up on <a href="https://www.facebook.com/messages/t/lauren.winchester.1994">Messenger </a> if you still have trouble getting used to the content. You can also download the <a download href="LuTuts.zip">source code</a>.</span>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+body { font-family: "Georgia"; }
+
+h1::before 
+{
+    /* It is important to notice that when using ::before ruleset,
+       you must always include the content property.
+       Otherwise the changes in the ruleset will be ignored.
+       If you do not intend to add text, you can leave it blank.
+
+       content: "";
+
+       The other changes take affect immediately after refreshing/loading the HTML document. */
+    content: "HTML & CSS - ";
+    color: #981839; /* Content before the text in <h1> changes colour. */
+
+    /* You can add a background, padding, whatever you want!
+       Bear in mind that the properties in the ::before ruleset
+       apply only to the content you wish to add before a particular element. */
+}
+
+/* link: neutral state
+   visited: Self-explanatory :) */
+a:link, a:visited 
+{ 
+    color: #000000; 
+    text-decoration: none; /* Remove the underline. */
+}
+
+/* When the mouse goes over the link. */
+a:hover 
+{
+    color: #981839;
+    transition: 0.5s color; /* Text color changes in 0.5 seconds upon hover. */
+}
+
+p 
+{ 
+    content: ""; /* This can be applied on other elements without the ::before/::after. */
+    background: yellow; 
+    padding: 5px;
+}
+
+code 
+{
+    color: darkgreen; 
+    font-size: 150%; 
+}
+
+.compatible::before
+{
+    content: "Compatible Browsers";
+    padding: 5px;
+    background-color: red;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+ul li ul li 
+{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.statement::after 
+{
+    content: ";";
+    font-size: 130%;
+    color: blue;
+}
+
+.comment::after 
+{
+    content: " //Creating an integer array. We do not have to specify the size.";
+    color: darkgreen;
+}
+
+a::after 
+{
+    content: " ("attr(href)")";
+}
